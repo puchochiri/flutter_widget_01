@@ -1,3 +1,6 @@
+import 'package:flutter_widget_01/widget/text_widget.dart';
+import 'package:flutter_widget_01/widget/textbutton_widget.dart';
+import 'package:flutter_widget_01/widget/gestureDetector_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: // 여기에 예제 코드 작성하기
-        )
-      )
-    )
+          child: gestureDetectorExample()
+
+        ),
+      ),
+    );
   }
 }
