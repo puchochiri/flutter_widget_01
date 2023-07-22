@@ -6,6 +6,10 @@ import 'package:flutter_widget_01/widget/SizedBox_widget.dart';
 import 'package:flutter_widget_01/widget/padding_widget.dart';
 import 'package:flutter_widget_01/widget/margin_widget.dart';
 import 'package:flutter_widget_01/widget/safeArea_widget.dart';
+import 'package:flutter_widget_01/widget/Row_widget.dart';
+import 'package:flutter_widget_01/widget/column_widget.dart';
+import 'package:flutter_widget_01/widget/flexible_widget.dart';
+import 'package:flutter_widget_01/widget/stack_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: safeAreaExample()
+          child: stackExample()
 
         ),
       ),

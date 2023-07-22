@@ -1,48 +1,37 @@
 import 'package:flutter/material.dart';
 
-class rowExample extends StatelessWidget {
+class stackExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: SizedBox(
-          //반대축에서 이동할 공간을 제공하기 위해 높이를 최대한으로 설정
-          height: double.infinity,
-          child: Row(
-            //주축 정렬 지정
-            mainAxisAlignment: MainAxisAlignment.start,
-            //반대축 정렬 지정
-            crossAxisAlignment: CrossAxisAlignment.center,
-            //넣고 싶은 위젯 입력
+          //반대축에서 이동할 공간을 제공해주기 위해 너비를 최대한으로 설정
+          width: double.infinity,
+          child: Stack(
             children: [
+              // 빨간색 Container
               Container(
-                height: 50.0,
-                width: 50.0,
+                height: 300.0,
+                width: 300.0,
                 color: Colors.red,
               ),
-              //SizedBox는 일반적으로 공백을
-              //생성할 때 사용
-              const SizedBox(width: 12.0),
+              //노란색 Container
               Container(
-                height: 50.0,
-                width:  50.0,
-                color: Colors.green,
+                height: 250.0,
+                width: 250.0,
+                color: Colors.yellow,
               ),
-              const SizedBox(width: 12.0),
+              //파란색 Container
               Container(
-                height: 50.0,
-                width:  50.0,
+                height: 200.0,
+                width: 200.0,
                 color: Colors.blue,
               ),
-            ]
 
-
-
+            ],
           )
 
-
-          //SizedBox는 일반적으로 공백을
-          //생성할때 사용
 
 
         )
